@@ -59,9 +59,9 @@ public class Video
     }
 }
 
-class Program
+public static class YouTubeProgram
 {
-    static void Main(string[] args)
+    public static void Run()
     {
         Video video = new Video("Cool Coding Tutorial", "Alice", 300);
         video.Play();
