@@ -83,14 +83,13 @@ public class Order
             total += product.GetTotalPrice();
         }
 
-        // Add shipping cost
         if (customer.LivesInUSA())
         {
-            total += 5; // Flat rate inside USA
+            total += 5; // Domestic shipping
         }
         else
         {
-            total += 35; // Flat rate international
+            total += 35; // International shipping
         }
 
         return total;
