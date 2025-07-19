@@ -18,14 +18,14 @@ public class EternalGoal : Goal
 
     //  shows the goal in the list, using [∞] to mean "never finished"
     public override string GetStatus()
-    {
+    { // the infinty sign look likes the bset option 
         return $"[∞] {_name} ({_description})"; // Display status with infinity symbol
     }
 
     
     public override string SaveString() // will returns the goal’s data as a string to save to a file
     {
-        // Format: type|name|description|points
+        // Format: type|name|description|points 
         return $"Eternal|{_name}|{_description}|{_points}";
     }
 }

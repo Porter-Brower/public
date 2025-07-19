@@ -31,7 +31,7 @@ public class SimpleGoal : Goal
     
     public override string GetStatus()
     {
-        // If completed, show [X], otherwise [ ]
+        // If completed, show [X], otherwise [ ] i dont really like the X but i think it does it job but if you have any recomondation im open brother nathan 
         return $"{(_isComplete ? "[X]" : "[ ]")} {_name} ({_description})";
     }
 
